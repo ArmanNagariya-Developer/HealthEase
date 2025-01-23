@@ -13,24 +13,28 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="./css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
         <header>
-           <div class="container-fluid bg-dark text-light p-3">
-            <div class="row">
-                <div class="col-sm-4">
+           <div class="container-fluid bg-ligth text-dark shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="row ">
+                <div class="col-sm-4 p-2">
                     <img src="assets/HealthEaseLogo.png" alt="" srcset="" class="img-logo">
-                </div>
-                <div class="col-auto ">
+                    <span class="fs-4">
+                        <span style="color: rgb(255, 196, 0);">H</span><span style="color: rgb(0, 228, 11);">ealth</span>Ease
+                    </span>
+                    </div>
+                
+                <div class="col-auto p-3">
                     Home
                 </div>
-                <div class="col-auto">
+                <div class="col-auto p-3">
                     Home
-                </div>  <div class="col-auto">
+                </div>  <div class="col-auto p-3">
                     Home
-                </div>  <div class="col-auto">
+                </div>  <div class="col-auto p-3">
                     Home
                 </div>
             </div>
