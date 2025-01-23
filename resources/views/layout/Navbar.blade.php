@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container-fluid shadow-lg ">
+	    <div class="container shadow-lg ">
 	    
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
@@ -73,8 +73,10 @@
     <!-- END nav -->
 
 	</section>
-
-	@eydie
+	
+	<div class="container">
+		@yield('content')
+	</div>
 
 	<script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>

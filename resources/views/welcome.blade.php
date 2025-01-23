@@ -22,7 +22,14 @@
         <header>
             @extends('layout/Navbar')
         </header>
-        <main></main>
+        @section('content')
+        <main>
+            <div class="container">
+
+            </div>
+
+        </main>
+        @endsection
         <footer>
             <!-- place footer here -->
         </footer>
