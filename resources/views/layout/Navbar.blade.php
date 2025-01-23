@@ -20,7 +20,8 @@
 
 	</head>
 	<body>
-	<section class="ftco-section">
+		
+		<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col">
@@ -30,7 +31,7 @@
 					<div class="social-media">
 		    		<p class="mb-0 d-flex">
 		    			<a href="https://github.com/ArmanNagariya-Developer" class="d-flex align-items-center justify-content-center bgcolor"><span class="fa fa-github"><i class="sr-only">GitHub</i></span></a>
-		    			<a href="" class="d-flex align-items-center justify-content-center bgcolor"><span class="fa fa-linkedin"><i class="sr-only">Twitter</i></span></a>
+		    			<a href="https://www.linkedin.com/in/arman-nagariya-378639253/" class="d-flex align-items-center justify-content-center bgcolor"><span class="fa fa-linkedin"><i class="sr-only">Twitter</i></span></a>
 		    			<a href="https://mainownweb.netlify.app/" class="d-flex align-items-center justify-content-center"><span class="fa fa-globe"><i class="sr-only">Instagram</i></span></a>
 		    			<a href="https://laravel.com/docs/11.x" class="d-flex align-items-center justify-content-center"><span class="fa fa-pied-piper"><i class="sr-only">Dribbble</i></span></a>
 		    		</p>
@@ -72,6 +73,8 @@
     <!-- END nav -->
 
 	</section>
+
+	@eydie
 
 	<script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
