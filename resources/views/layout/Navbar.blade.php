@@ -23,11 +23,8 @@
 
 	<section class="ftco-section">
 		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col">
-					{{-- <a class="navbar-brand" href="">HealthEase <span>Online</span></a> --}}
-				</div>
-				<div class="col d-flex justify-content-end pb-2">
+			<div class="row">
+				<div class="col d-flex justify-content-start pb-2">
 					<div class="social-media">
 						<p class="mb-0 d-flex">
 							<a href="https://github.com/ArmanNagariya-Developer"
@@ -35,16 +32,23 @@
 									class="fa fa-github"><i class="sr-only">GitHub</i></span></a>
 							<a href="https://www.linkedin.com/in/arman-nagariya-378639253/"
 								class="d-flex align-items-center justify-content-center bgcolor"><span
-									class="fa fa-linkedin"><i class="sr-only">Twitter</i></span></a>
+									class="fa fa-linkedin"><i class="sr-only">Linkedin</i></span></a>
 							<a href="https://mainownweb.netlify.app/"
 								class="d-flex align-items-center justify-content-center"><span class="fa fa-globe"><i
-										class="sr-only">Instagram</i></span></a>
-							<a href="https://laravel.com/docs/11.x"
+										class="sr-only">Website</i></span></a>
+							<a href="https://stackoverflow.com/users/23572007/arman-nagariya"
 								class="d-flex align-items-center justify-content-center"><span
-									class="fa fa-pied-piper"><i class="sr-only">Dribbble</i></span></a>
+									class="fa fa-stack-overflow"><i class="sr-only">Dribbble</i></span></a>
 						</p>
 					</div>
 				</div>
+				<div class="col d-flex justify-content-end ">
+					<div class="btn p-0">
+						<a href="{{route("user.login")}}"><button type="button" class="btn btn-outline-secondary">Login</button></a>
+						<a href="{{route("user.register")}}"><button type="button" class="btn btn-outline-secondary">Register</button></a>
+					</div>
+				</div>
+			
 			</div>
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
