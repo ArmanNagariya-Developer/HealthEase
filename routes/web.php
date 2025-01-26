@@ -6,6 +6,10 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::view("/","Home.index")->name("welcome");
+
 Route::view('/user/login', 'UserAuth.Login')->name('user.login');
+
 Route::get("/user/register",[UserRegisterController::class,"index"])->name("user.register");
+Route::post("/user/register",[UserRegisterController::class,"addUser"])->name("adduser.register");
+
 Route::view("/loader","layout.loader");

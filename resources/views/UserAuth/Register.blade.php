@@ -23,9 +23,6 @@
 <body>
     @extends('layout.navbar')
     @include('layout.loader')
-
-
-
     @section('content')
     <section class="vh-100">
         <div class="container-fluid h-custom">
@@ -35,7 +32,8 @@
                         class="img-fluid" alt="Sample image">
                 </div>
                 <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                    <form>
+                    <form action="{{route("adduser.register")}}" method="POST">
+                        @csrf
                         <h3 class="text-center mt-3 mb-3"
                             style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
                             Register</h3>
