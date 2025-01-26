@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserRegisterController extends Controller
 {
@@ -18,7 +19,13 @@ class UserRegisterController extends Controller
             'gender' => 'required|string',  
             'date_of_birth' => 'required|date',   
         ]);
-        $users = User::create([$validUsers]);
+        $users = User::create([
+            "name"=>$request->name,
+            "email"=>$request->email,
+            "gender"=>$request->gender,
+            "date_of_birth"=>$request->date_of_birth,
+            "password"=>Hash::make($request->password)
+        ]);
       //  return dd($users);
     }
 }
