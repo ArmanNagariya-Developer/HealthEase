@@ -15,39 +15,18 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <style>
-        .input-group-text {
-            border: none;
-            border-radius: 0.25rem 0 0 0.25rem;
-            font-size: 1rem;
-        }
-
-        .form-control {
-            border: 1px solid #ced4da;
-            border-radius: 0 0.25rem 0.25rem 0;
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        .form-control:focus {
-            border-color: #80bdff;
-            outline: none;
-            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-        }
-
-        .form-text {
-            font-size: 0.85rem;
-        }
+        
     </style>
 
 </head>
 
 <body>
     @extends('layout.navbar')
+    @include('layout.loader')
 
 
 
     @section('content')
-
     <section class="vh-100">
         <div class="container-fluid h-custom">
             <div class="row d-flex justify-content-center align-items-center h-100">

@@ -8365,3 +8365,36 @@ h1, h2, h3, h4, h5,
   border: 1px solid rgba(0, 0, 0, 0.1); }
   .form-control:focus, .form-control:active {
     border-color: #000; }
+
+    .input-group-text {
+      border: none;
+      border-radius: 0.25rem 0 0 0.25rem;
+      font-size: 1rem;
+  }
+
+  .form-control {
+      border: 1px solid #ced4da;
+      border-radius: 0 0.25rem 0.25rem 0;
+      padding: 10px;
+      font-size: 16px;
+  }
+
+  .form-control:focus {
+      border-color: #80bdff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .form-text {
+      font-size: 0.85rem;
+  }
+
+  .small-carousel {
+    max-height: 800px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.small-carousel img {
+    height: 100%; /* Ensure images fill the height */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+}

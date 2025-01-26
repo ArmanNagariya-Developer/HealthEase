@@ -26,6 +26,7 @@
         
         @section('content')
         
+        @include('layout.loader')
         <section class="vh-100">
             <div class="container-fluid h-custom">
               <div class="row d-flex justify-content-center align-items-center h-100">
