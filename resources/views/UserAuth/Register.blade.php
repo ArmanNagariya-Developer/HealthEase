@@ -40,8 +40,11 @@
 
                         <!-- Name input -->
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="" />
+                            <input type="text" class="form-control " name="name" id="name" placeholder="" />
                             <label for="formId1">Name</label>
+                            @error('name')
+                                {{$message}}
+                            @enderror
                         </div>
 
 
@@ -49,19 +52,25 @@
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" name="email" id="email" placeholder="" />
                             <label for="email">Email</label>
+                            @error('email')
+                            {{$message}}
+                        @enderror
                         </div>
 
                         <!-- Gender -->
                         <div class="form-group d-flex align-items-center mb-3" style="max-width: 400px;">
                             <label class="me-3 font-weight-bold" style="min-width: 120px;">Gender:</label>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="male" />
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="Male"/>
                                 <label class="form-check-label" for="male">Male</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="female" />
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="Female"/>
                                 <label class="form-check-label" for="female">Female</label>
                             </div>
+                            @error('gander')
+                            {{$message}}
+                        @enderror
                         </div>
 
                         <!-- Date of Birth -->
@@ -74,9 +83,12 @@
                                         <i class="fa fa-calendar"></i>
                                     </span>
                                 </div>
-                                <input type="date" class="form-control" id="dob" name="dob"
+                                <input type="date" class="form-control" id="dob" name="date_of_birth"
                                     placeholder="Select your date of birth" required />
                             </div>
+                            @error('date_of_birth')
+                            {{$message}}
+                        @enderror
                         </div>
 
 
@@ -84,6 +96,9 @@
                         <div class="form-floating mb-3">
                             <input type="password" class="form-control" name="password" id="password" placeholder="" />
                             <label for="formId1">Password</label>
+                            @error('password')
+                            {{$message}}
+                        @enderror
                         </div>
 
                         <!-- Confirm Password input -->
@@ -105,7 +120,7 @@
                         </div>
 
                         <div class="text-center text-lg-start mt-4 pt-2">
-                            <button type="button" data-mdb-button-init data-mdb-ripple-init
+                            <button type="submit" 
                                 class="btn btn-primary btn-lg"
                                 style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
                             <p class="small fw-bold mt-2 pt-1 mb-0 text-end">You have an account? <a href="{{route("user.login")}}" class="link-danger">Login</a></p>
@@ -149,3 +164,15 @@
 </body>
 
 </html>
+
+
+
+{{-- @forelse ($users as $u )
+{{$u->name}}
+{{$u->email}}
+{{$u->password}}
+{{$u->gander}}
+{{$u->date_of_birth}}
+@empty
+    {{"no data found"}}
+@endforelse --}}
