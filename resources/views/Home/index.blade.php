@@ -27,7 +27,6 @@
             <div class="container">
 
             </div>
-
         </main>
         @endsection
         <footer>

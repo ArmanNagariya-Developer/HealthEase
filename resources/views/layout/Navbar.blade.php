@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row">
@@ -68,7 +67,7 @@
 				<div class="collapse navbar-collapse" id="ftco-nav">
 					<ul class="navbar-nav mr-auto">
 						<div class="col">
-							<a class="navbar-brand text-dark " href="" style="padding-bottom: 0px;margin-bottom: 0px;padding-top: 20px;">HealthEase <span>Online</span></a>
+							<a class="navbar-brand text-dark " href="{{route("welcome")}}" style="padding-bottom: 0px;margin-bottom: 0px;padding-top: 20px;">HealthEase <span>Online</span></a>
 						</div>
 						<li class="nav-item" style="background-color: rgb(0, 140, 255);"><a href="#"
 								class="nav-link">Home</a></li>
