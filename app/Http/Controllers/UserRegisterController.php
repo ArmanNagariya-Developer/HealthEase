@@ -12,7 +12,10 @@ class UserRegisterController extends Controller
         return view("UserAuth.Register");
     }
     public function addUser(Request $request){
-       $validUsers =  $request->validate([
+      
+      if ($request->isMethod("post")) {
+        
+        $validUsers =  $request->validate([
             'name' => 'required|string|max:25|min:3',   
             'email' => 'required|email|unique:users,email',   
             'password' => 'required|min:8',   
@@ -26,6 +29,9 @@ class UserRegisterController extends Controller
             "date_of_birth"=>$request->date_of_birth,
             "password"=>Hash::make($request->password)
         ]);
+        
+      }
+      
       //  return dd($users);
     }
 }
