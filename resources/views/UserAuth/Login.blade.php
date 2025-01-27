@@ -35,18 +35,19 @@
                     class="img-fluid" alt="Sample image">
                 </div>
                 <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                  <form>
+                  <form action={{route("authuser.login")}} method="post">
+                    @csrf
                     <h3 class="text-center mt-3 mb-3" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Login</h3>
                     <!-- Email input -->
                     <div class="form-floating mb-3">
                         <input
                             type="text"
                             class="form-control"
-                            name="formId1"
-                            id="formId1"
+                            name="email"
+                            id="Email"
                             placeholder=""
                         />
-                        <label for="formId1">Email</label>
+                        <label for="Email">Email</label>
                     </div>
                     
           
@@ -55,11 +56,11 @@
                         <input
                             type="password"
                             class="form-control"
-                            name="formId1"
-                            id="formId1"
+                            name="password"
+                            id="password"
                             placeholder=""
                         />
-                        <label for="formId1">Password</label>
+                        <label for="password">Password</label>
                     </div>
           
                     <div class="d-flex justify-content-between align-items-center">
@@ -74,7 +75,7 @@
                     </div>
           
                     <div class="text-center text-lg-start mt-4 pt-2">
-                      <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
+                      <button  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
                         style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
 
                         <p class="small fw-bold mt-2 pt-1 mb-0 text-end">Don't have an account? <a href="{{route("user.register")}}"

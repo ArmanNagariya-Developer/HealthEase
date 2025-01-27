@@ -29,9 +29,9 @@ class UserRegisterController extends Controller
             "date_of_birth"=>$request->date_of_birth,
             "password"=>Hash::make($request->password)
         ]);
-        
+        return redirect()->route("user.login")->with("success","Registration Completed Successfully");
       }
       
-      //  return dd($users);
+        return back()->withErrors("user.register");
     }
 }
