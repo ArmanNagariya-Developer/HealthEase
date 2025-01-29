@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view("/","Home.index")->name("welcome");
 
-Route::view('/user/login', 'UserAuth.Login')->name('user.login');
+Route::view('/user/login', 'Home.Login')->name('user.login');
 Route::post("/user/login",[UserLoginController::class,"LoginAuth"])->name("authuser.login");
 Route::post("/user/logout",[UserLoginController::class,"UserLogout"])->name("user.logout");
 
