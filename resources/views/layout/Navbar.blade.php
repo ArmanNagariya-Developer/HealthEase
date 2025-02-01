@@ -27,7 +27,7 @@
 					</div>
 					@else
 					<div class="btn p-0">
-						<a href="{{route("user.login")}}"><button type="button" class="btn btn-outline-secondary">Login</button></a>
+						<a href="{{route('user.login')}}"><button type="button" class="btn btn-outline-secondary">Login</button></a>
 						<a href="{{route("user.register")}}"><button type="button" class="btn btn-outline-secondary">Register</button></a>
 					</div>
 					@endif

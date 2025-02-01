@@ -1,7 +1,6 @@
 
 @extends('layout.layout')
 @section('content')
-        <main>
             <section class="vh-100">
                 <div class="container-fluid h-custom">
                     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -132,5 +131,4 @@
                 </div>
         
             </section>
-        </main>
        @endsection
