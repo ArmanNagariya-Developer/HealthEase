@@ -1,74 +1,69 @@
+  <footer id="footer" class="footer light-background">
 
-        <footer>
-           
-<div class="container-fluid w-100">
+    <div class="container-fluid mt-4" >
+      <div class="row gy-4 m-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Medilab</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A105 Xyz Street</p>
+            <p>India, ABC 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 9510565141</span></p>
+            <p><strong>Email:</strong> <span>armannagariya@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://mainownweb.netlify.app/"><i class="bi bi-globe-europe-africa"></i></a>
+            <a href="https://stackoverflow.com/users/23572007/arman-nagariya"><i class="bi bi-stack"></i></a>
+            <a href="https://github.com/ArmanNagariya-Developer"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/arman-nagariya-378639253/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
 
-    <footer class="text-center text-white" style="background-color: rgb(23, 95, 143);">
-    <!-- Grid container -->
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-white m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="bi bi-facebook"></i></a>
-  
-        <!-- Twitter -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-white m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="bi bi-twitter"></i
-        ></a>
-  
-        <!-- Google -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-white m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="bi bi-google"></i
-        ></a>
-  
-        <!-- Instagram -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-white m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="bi bi-instagram"></i
-        ></a>
-  
-        <!-- Linkedin -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-white m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="bi bi-linkedin"></i
-        ></a>
-        <!-- Github -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-white m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="bi bi-github"></i
-        ></a>
-      </section>
-      <!-- Section: Social media -->
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2025 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Arman Nagariya</a>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+
+          </ul>
+        </div>
+
+      </div>
     </div>
-    <!-- Copyright -->
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">HealthEase</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://github.com/ArmanNagariya-Developer">Arman Nagariya</a> 
+      </div>
+    </div>
+
   </footer>
-
-
-  <!-- End of .container -->

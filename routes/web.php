@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::view("/","Home.index")->name("welcome");
-
+Route::view("/aboutus","AboutUs.Aboutus")->name("aboutus");
 
 Route::prefix("user")->group(function(){
 

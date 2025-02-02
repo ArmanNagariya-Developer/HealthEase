@@ -13,16 +13,27 @@
               <form action={{route("authuser.login")}} method="post">
                 @csrf
                 <h3 class="text-center mt-3 mb-3" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Login</h3>
+                @if (session('loginError'))
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <strong>Error:</strong> {{ session('loginError') }}
+  </div>
+@endif
+
                 <!-- Email input -->
                 <div class="form-floating mb-3">
                     <input
                         type="text"
-                        class="form-control"
+                        class="form-control @error('email') is-invalid @enderror"
                         name="email"
                         id="Email"
                         placeholder=""
+                        value="{{old("email")}}"
                     />
                     <label for="Email">Email</label>
+                    @error('email')
+                    <span class="text-danger">{{$message}}</span>
+                @enderror
                 </div>
                 
       
@@ -30,21 +41,29 @@
                 <div class="form-floating mb-3">
                     <input
                         type="password"
-                        class="form-control"
+                        class="form-control @error('password') is-invalid @enderror"
                         name="password"
                         id="password"
                         placeholder=""
+                        value="{{old("password")}}"
                     />
                     <label for="password">Password</label>
+                    @error('password')
+                    <span class="text-danger">{{$message}}</span>
+                @enderror
                 </div>
+
       
                 <div class="d-flex justify-content-between align-items-center">
                   <!-- Checkbox -->
                   <div class="form-check mb-0">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                    <input class="form-check-input me-2 @error('terms') is-invalid @enderror" type="checkbox" value="1" id="form2Example3" name="terms" {{old('terms')?"checked":""}}/>
                     <label class="form-check-label" for="form2Example3">
                       Remember me
                     </label>
+                    @error('terms')
+                    <span class="text-danger">*</span>
+                @enderror
                   </div>
                   <a href="#!" class="text-body">Forgot password?</a>
                 </div>

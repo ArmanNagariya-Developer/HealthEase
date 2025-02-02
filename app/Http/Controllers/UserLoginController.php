@@ -18,14 +18,17 @@ class UserLoginController extends Controller
                'email' => 'required|email',
                'password' => 'required|min:8',   
             ]);
+            $request->validate([
+                "terms"=>"required"
+            ]);
             
             if (Auth::attempt($user)) {
                 $request->session()->regenerate();
-                return redirect()->route("welcome")->with("success","Login Successfully");
+                return redirect()->route("welcome")->with("Loginsuccess","Login Successfully");
             }    
             else
             {
-                return back()->withErrors("error","Login email or password is incorrect ");
+                return back()->with("loginError","Login email or password is incorrect ");
             }
         }
         
