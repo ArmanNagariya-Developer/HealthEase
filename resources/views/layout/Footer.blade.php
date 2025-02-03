@@ -4,7 +4,7 @@
       <div class="row gy-4 m-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Medilab</span>
+            <span class="sitename">HealthEase</span>
           </a>
           <div class="footer-contact pt-3">
             <p>A105 Xyz Street</p>
