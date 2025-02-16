@@ -5,13 +5,14 @@ use App\Http\Controllers\UserRegisterController;
 use App\Http\Middleware\AdminLoginMiddleware;
 use App\Http\Middleware\UserLoginMiddleware;
 use Faker\Guesser\Name;
+use Illuminate\Routing\RouteUri;
 use Illuminate\Support\Facades\Route;
 
 
     // Home pages && guests access pages 
     Route::view("/","Home.index")->name("welcome");
     Route::view("/aboutus","AboutUs.Aboutus")->name("aboutus");
-
+    Route::view("/blog","Blogs.index")->name("blog");
 
     // login && register pages routes
     Route::prefix("user")->group(function(){
