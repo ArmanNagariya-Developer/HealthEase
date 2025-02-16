@@ -54,24 +54,19 @@
 						<div class="col">
 							<a class="navbar-brand text-dark " href="{{route("welcome")}}" style="padding-bottom: 0px;margin-bottom: 0px;padding-top: 20px;">HealthEase <span>Online</span></a>
 						</div>
-						<li class="nav-item" style="background-color: rgb(0, 140, 255);"><a href="#"
+						<li class="nav-item" style="background-color: rgb(0, 140, 255);">
+							<a href="{{route("welcome")}}"
 								class="nav-link">Home</a></li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="dropdown04" role="button" 
+									<a class="nav-link " href="#" id="dropdown04" role="button" 
 									   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									  Page
+									   Appointment
 									</a>
-									<div class="dropdown-menu" aria-labelledby="dropdown04">
-									  <a class="dropdown-item" href="#">Page 1</a>
-									  <a class="dropdown-item" href="#">Page 2</a>
-									  <a class="dropdown-item" href="#">Page 3</a>
-									  <a class="dropdown-item" href="#">Page 4</a>
-									</div>
 								  </li>
 								  
-						<li class="nav-item"><a href="#" class="nav-link">Catalog</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Doctors</a></li>
 						<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+						<li class="nav-item"><a href="{{route("aboutus")}}" class="nav-link">About Us</a></li>
 					</ul>
 				</div>
 			</div>
