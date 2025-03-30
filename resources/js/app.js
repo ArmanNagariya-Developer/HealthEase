@@ -8,7 +8,7 @@ import "@popperjs/core"
 import "../../public/js/main1";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js";
-new PureCounter();
+
 
 
 

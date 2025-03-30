@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
     Route::view("/","Home.index")->name("welcome");
     Route::view("/aboutus","AboutUs.Aboutus")->name("aboutus");
     Route::view("/blog","Blogs.index")->name("blog");
+    Route::view("/appointment","appointment.appointment")->name("appointment");
 
     // login && register pages routes
     Route::prefix("user")->group(function(){
@@ -26,11 +27,10 @@ use Illuminate\Support\Facades\Route;
     });
 
 
-Route::middleware([AdminLoginMiddleware::class])->group(function(){
-    Route::prefix("admin",function(){
+    Route::prefix("admin")->group(function(){
         Route::view("/dashboard","Admin.Home.index")->name("admin.dashboard");
     });
-});
+
 
 
 

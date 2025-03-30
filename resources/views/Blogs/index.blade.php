@@ -28,8 +28,9 @@
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
           <div class="service-item position-relative">
-            <div class="icon">
-              <i class="fa fa-stethoscope"></i>
+            <div>
+              {{-- <i class="fa fa-heartbeat"></i> --}}
+              <img src="https://www.eternalhospital.com/sanganer/uploadedfiles/gallery/1708499612Department-Neurology.jpg" alt="" class="p-0" width="350" height="250">
             </div>
             <a href="#" class="stretched-link">
               <h3>Neurology</h3>
@@ -40,8 +41,9 @@
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
           <div class="service-item position-relative">
-            <div class="icon">
-              <i class="fa fa-plus-square"></i>
+            <div>
+              {{-- <i class="fa fa-heartbeat"></i> --}}
+              <img src="https://www.chaudharyhospital.in/wp-content/uploads/2020/05/Orthopedics-1-1.png" alt="" class="p-0" width="350" height="250">
             </div>
             <a href="#" class="stretched-link">
               <h3>Orthopedics</h3>
@@ -52,8 +54,9 @@
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
           <div class="service-item position-relative">
-            <div class="icon">
-              <i class="fa fa-wheelchair"></i>
+            <div>
+              {{-- <i class="fa fa-heartbeat"></i> --}}
+              <img src="https://media.istockphoto.com/id/508509000/photo/professional-pediatrician-examining-infant.jpg?s=612x612&w=0&k=20&c=gp0CvpwTWX1rs19ZP8nLiAweUEgIij2tWXB56wVTOeE=" alt="" class="p-0" width="350" height="250">
             </div>
             <a href="#" class="stretched-link">
               <h3>Pediatrics</h3>
@@ -65,8 +68,9 @@
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
           <div class="service-item position-relative">
-            <div class="icon">
-              <i class="fa fa-female"></i>
+            <div>
+              {{-- <i class="fa fa-heartbeat"></i> --}}
+              <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/324/324292/young-woman-speaking-with-gynecologist.jpg" alt="" class="p-0" width="350" height="250">
             </div>
             <a href="#" class="stretched-link">
               <h3>Obstetrics & Gynecology (OB-GYN)</h3>
@@ -78,8 +82,9 @@
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
           <div class="service-item position-relative">
-            <div class="icon">
-              <i class="fa fa-medkit"></i>
+            <div>
+              {{-- <i class="fa fa-heartbeat"></i> --}}
+              <img src="https://media.npr.org/assets/img/2021/04/01/ucsf_20190522_lester_044_wide-cbd733ed57f5bf71a960fbd6daec3fe0b2f977a1.jpg" alt="" class="p-0" width="350" height="250">
             </div>
             <a href="#" class="stretched-link">
               <h3> Dermatology</h3>
