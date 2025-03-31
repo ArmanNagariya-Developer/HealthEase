@@ -200,6 +200,24 @@
             </div>
         </div>
     </div>
+
+    <div class="row mt-5">
+        @if(isset($doctors) && count($doctors) > 0)
+            @foreach($doctors as $doctor)
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg border-0 p-4 bg-white rounded-4 text-start animate-hover">
+                        <h5 class="fw-bold text-primary"><strong>Docotor Name:</strong> {{ $doctor->doctorname }}</h5>
+                        <p class="text-muted"><strong>Docotor Specialization:</strong> {{ $doctor->specialization }}</p>
+                        <p class="text-muted"><strong class="pe-2">Docotor Phone:</strong><i class="bi bi-telephone"></i> {{ $doctor->phone ?? 'N/A' }}</p>
+                        <p class="text-muted"><strong class="pe-2">Docotor Email:</strong><i class="bi bi-envelope"></i> {{ $doctor->email ?? 'N/A' }}</p>
+                        <a href="{{route('appointment.create', ['doctor_id' => $doctor->id]) }}" class="btn btn-outline-primary btn-sm mt-2">📅 Book Appointment</a>
+                    </div>
+                </div>
+            @endforeach
+        @else
+            <p class="text-center text-muted">No doctors found.</p>
+        @endif
+    </div>
 </section>
 
 
