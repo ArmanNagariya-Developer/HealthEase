@@ -9,19 +9,20 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    // public function up(): void
-    // {
-    //     Schema::create('patients', function (Blueprint $table) {
-    //         $table->id();
-    //         $table->timestamps();
-    //     });
-    // }
+    public function up(): void
+    {
+        Schema::table('medicines', function (Blueprint $table) {
+            $table->string('image')->nullable(); // Image field
+        });
+    }
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('patients');
+        Schema::table('medicines', function (Blueprint $table) {
+            //
+        });
     }
 };

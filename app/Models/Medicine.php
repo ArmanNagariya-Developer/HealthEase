@@ -12,6 +12,7 @@ class Medicine extends Model
         'description',
         'price',
         'stock',
+        'image',
     ];
 
     // Relationship with Medicine Orders

@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserLoginController;
 use App\Http\Controllers\UserRegisterController;
 use App\Http\Controllers\VideoCallController;
@@ -19,6 +21,13 @@ Route::view("/blog", "Blogs.index")->name("blog");
 // Public Doctor Routes
 Route::get("/appointment", [DoctorController::class, "index"])->name("appointment");
 Route::post("/doctor/search", [DoctorController::class, "search"])->name("doctor.search");
+
+Route::get('/store', [ProductController::class, 'index'])->name('appointment.store');
+Route::get('/medicine/{id}', [ProductController::class, 'show'])->name('medicine.details');
+
+Route::get('/cart', [CartController::class, 'viewCart'])->name('cart.view');
+Route::post('/cart/add/{id}', [CartController::class, 'addToCart'])->name('cart.add');
+Route::delete('/cart/remove/{id}', [CartController::class, 'removeFromCart'])->name('cart.remove');
 
 // Book Appointment Routes (Protected for Users)
 Route::middleware(['auth'])->group(function () {
