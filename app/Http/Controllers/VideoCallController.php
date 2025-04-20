@@ -32,12 +32,15 @@ class VideoCallController extends Controller
     public function acceptCall($id)
     {
         $appointment = Appointment::findOrFail($id);
-
+    
         if ($appointment->status !== 'confirmed') {
             return redirect()->route('admin.dashboard')->with('error', 'Call is not available yet.');
         }
     
-        $sessionId = Str::uuid();  // Generates a unique session ID for the call
-        return view('video.acceptCall', compact('appointment', 'sessionId'));
+        $sessionId = Str::uuid();
+        $doctor = $appointment->doctor; // Get the related doctor
+    
+        return view('video.acceptCall', compact('appointment', 'sessionId', 'doctor'));
     }
+    
 }

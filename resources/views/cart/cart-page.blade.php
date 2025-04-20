@@ -44,6 +44,10 @@
             </tbody>
         </table>
         <a href="/" class="btn btn-primary mt-3"><i class="fas fa-shopping-bag"></i> Continue Shopping</a>
+        
+    <a href="{{ route('checkout.index') }}" class="btn btn-success btn-lg">
+        <i class="fas fa-credit-card"></i> Proceed to Checkout
+    </a>
     @else
         <div class="alert alert-info">Your cart is empty.</div>
     @endif

@@ -12,16 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('appointments', function (Blueprint $table) {
-            $table->id();
             $table->foreignId('patient_id')->constrained('users')->onDelete('cascade');
-            $table->foreignId('doctor_id')->constrained('doctors')->onDelete('cascade');
             $table->string('name');
             $table->string('email');
             $table->string('phone');
             $table->string('address');
-            $table->dateTime('appointment_date');
             $table->text('notes')->nullable();
-            $table->timestamps();
         });
     }
 

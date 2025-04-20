@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserLoginController;
@@ -22,7 +24,7 @@ Route::view("/blog", "Blogs.index")->name("blog");
 Route::get("/appointment", [DoctorController::class, "index"])->name("appointment");
 Route::post("/doctor/search", [DoctorController::class, "search"])->name("doctor.search");
 
-Route::get('/store', [ProductController::class, 'index'])->name('appointment.store');
+Route::get('/store', [ProductController::class, 'index'])->name('medicine.store');
 Route::get('/medicine/{id}', [ProductController::class, 'show'])->name('medicine.details');
 
 Route::get('/cart', [CartController::class, 'viewCart'])->name('cart.view');
@@ -39,6 +41,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/check-call/{id}', [AppointmentController::class, 'checkAndRedirectToCall'])->name('check.call');
    
     Route::get('/accept-call/{appointment}', [VideoCallController::class, 'acceptCall'])->name('accept.call');
+    
+    Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout.index');
+    Route::post('/checkout', [CheckoutController::class, 'process'])->name('checkout.process');
 
 });
 
@@ -49,13 +54,17 @@ Route::prefix("user")->group(function () {
 
     Route::get('login', [UserLoginController::class, "index"])->name('user.login');
     Route::post("login", [UserLoginController::class, "LoginAuth"])->name("authuser.login");
-    Route::post("logout", [UserLoginController::class, "UserLogout"])->name("user.logout");
+    Route::get("logout", [UserLoginController::class, "UserLogout"])->name("user.logout");
 });
 
 // Admin Routes with Middleware
 Route::prefix("admin")->middleware(['admin'])->group(function () {
     Route::view("/dashboard", "Admin.Home.index")->name("admin.dashboard");
 });
+
+Route::get("admin/login",[AdminAuthController::class,"loginPage"])->name("loginPage");
+Route::get("admin/register",[AdminAuthController::class,"registerPage"])->name("registerPage");
+Route::post("admin/register",[AdminAuthController::class,"register"])->name("registerProccess");
 
 
 

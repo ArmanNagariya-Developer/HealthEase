@@ -26,14 +26,14 @@
                     </div>
 
                     <!-- Action Buttons -->
-                    <div class="mt-4">
+                    <div class="mt-4 d-flex gap-3">
                         <form action="{{ route('cart.add', $medicine->id) }}" method="POST">
                             @csrf
-                            <button type="submit" class="btn btn-lg btn-success shadow-sm">
+                            <button type="submit" class="btn btn-lg btn-success shadow-sm add-to-cart-btn">
                                 <i class="fas fa-cart-plus"></i> Add to Cart
                             </button>
                         </form>
-                        <a href="{{ url()->previous() }}" class="btn btn-lg btn-outline-secondary shadow-sm">
+                        <a href="{{ url()->previous() }}" class="btn btn-lg btn-outline-secondary shadow-sm back-btn">
                             <i class="fas fa-arrow-left"></i> Back to Shop
                         </a>
                     </div>
@@ -42,6 +42,27 @@
         </div>
     </div>
 </div>
+
+<!-- Custom CSS for Buttons -->
+<style>
+    .add-to-cart-btn {
+        transition: all 0.3s ease;
+    }
+    .add-to-cart-btn:hover {
+        background-color: #28a745;
+        color: white;
+        box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+    }
+
+    .back-btn {
+        transition: all 0.3s ease;
+    }
+    .back-btn:hover {
+        background-color: #6c757d;
+        color: white;
+        box-shadow: 0 4px 10px rgba(108, 117, 125, 0.3);
+    }
+</style>
 
 <!-- Bootstrap Icons & FontAwesome (Include in Layout if Not Added) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

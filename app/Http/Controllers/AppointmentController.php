@@ -24,7 +24,7 @@ class AppointmentController extends Controller
         'doctor_id' => 'required|exists:doctors,id',
         'name' => 'required|string|max:255',
         'email' => 'required|email',
-        'phone' => 'required|string|max:15',
+        'phone' => 'required|digits:10',
         'address' => 'required|string|max:255',
         'appointment_date' => 'required|date|after:today',
         'notes' => 'nullable|string',
