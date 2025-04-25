@@ -2,16 +2,16 @@
         <!--begin::Sidebar Brand-->
         <div class="sidebar-brand">
           <!--begin::Brand Link-->
-          {{-- <a href="{{route("admin.home")}}" class="brand-link"> --}}
+          <a href="{{route("admin-dashboard")}}" class="brand-link">
             <!--begin::Brand Image-->
             <img
-                  src="{{ asset("assets/img/AdminLTELogo.png")}}" 
+                  src="https://cdn-icons-png.flaticon.com/512/6998/6998099.png" style="width: 50px; height: 50px;" 
               alt="AdminLTE Logo"
               class="brand-image opacity-75 shadow"
             />
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">Admin</span>
+            <span class="brand-text fw-light">Doctor</span>
             <!--end::Brand Text-->
           </a>
           <!--end::Brand Link-->
@@ -37,62 +37,39 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    {{-- <a href="{{route("admin.home")}}" class="nav-link active"> --}}
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Dashboard</p>
+                    <a href="" class="nav-link active">
+                      <i class="nav-icon bi bi-house"></i>
+                      <p>Home</p>
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon bi bi-tree-fill"></i>
+                  <i class="nav-icon bi bi-calendar-check"></i>
                   <p>
-                    Manage All Events
+                    Appointments
                     <i class="nav-arrow bi bi-chevron-right"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    {{-- <a href="{{route("admin.create_event")}}" class="nav-link"> --}}
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Create Events</p>
+                    <a href="" class="nav-link">
+                      <i class="nav-icon bi bi-telephone-inbound-fill"></i>
+                      <p>Join Meeting</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    {{-- <a href="{{route("admin.events")}}" class="nav-link"> --}}
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Manage Events</p>
+                    <a href="" class="nav-link">
+                      <i class="nav-icon bi bi-card-checklist"></i>
+                      <p>Manage Appointment</p>
                     </a>
                   </li>
                 </ul>
               </li>  
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon bi bi-tree-fill"></i>
-                  <p>
-                    Events Category
-                    <i class="nav-arrow bi bi-chevron-right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    {{-- <a href="{{route("admin.create_event_category")}}" class="nav-link"> --}}
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Create Category</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    {{-- <a href="{{route("admin.category")}}" class="nav-link"> --}}
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Manage Category</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>  
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon bi bi-tree-fill"></i>
+                  <i class="nav-icon bi bi-person-fill"></i>
                   <p>
                     Users
                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -100,26 +77,32 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    {{-- <a href="{{route("admin.usersManagement")}}" class="nav-link"> --}}
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Manage Users </p>
+                    <a href="" class="nav-link">
+                      <i class="nav-icon bi bi-person-lines-fill"></i>
+                      <p>Manage User</p>
                     </a>
                   </li>
                 </ul>
               </li>  
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon bi bi-tree-fill"></i>
+                  <i class="nav-icon bi bi-prescription2"></i>
                   <p>
-                    Users Refund
+                    Manage Medicine
                     <i class="nav-arrow bi bi-chevron-right"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    {{-- <a href="{{route("admin.refund")}}" class="nav-link"> --}}
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Manage Users Refund</p>
+                    <a href="" class="nav-link">
+                      <i class="nav-icon bi bi-capsule"></i>
+                      <p>Add Medicine</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="nav-icon bi bi-lungs"></i>
+                      <p>Manage Medicine</p>
                     </a>
                   </li>
                 </ul>
