@@ -1,0 +1,103 @@
+@use "/node_modules/admin-lte/src/scss/adminlte"; 
+@use "/node_modules/jsvectormap/src/scss/jsvectormap.scss";
+
+
+@import "/node_modules/overlayscrollbars/styles/overlayscrollbars.css"; 
+@import "/node_modules/font-awesome/css/font-awesome.css"; 
+@import "/node_modules/bootstrap-icons/font/bootstrap-icons.css"; 
+
+
+// @import '@fortawesome/fontawesome-free/css/all.min.css';
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css");
+
+
+
+/* In your main CSS or SASS file */
+@import url('https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
+
+
+
+
+
+
+
+
+
+
+.payment-method .step-text {
+  border: none;
+  text-align: inherit;
+  color: #363636;
+}
+
+.payment-method fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.payment-method legend {
+  font-size: 1.5rem;
+  padding: 0.7rem 1.5rem 1.5rem;
+  font-weight: 700;
+}
+
+.payment-method p {
+  text-align: left;
+  margin: 0;
+  border-top: #c7c6c6 1px solid;
+  color: #2b2b2b;
+}
+
+.payment-method label img {
+  width: 3rem;
+}
+
+.payment-method label {
+  padding: 0.7rem 2rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  cursor: pointer;
+}
+
+.payment-method p:hover:not(.step-text) {
+  background-color: #deeaff;
+}
+
+.payment-method label img {
+  margin-right: 0.5rem;
+}
+
+/* Checkmark instead of radio btn*/
+/* #1 take the input off-screen for good */
+.payment-method input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* #2 add own checkmark */
+.payment-method input:checked + label:after {
+  content: url('https://res.cloudinary.com/du2vvjrb5/image/upload/v1581191001/frontloops/l1s2-paymeth/check_fjt7xp.svg');
+  margin-left: auto;
+}
+
+/* Checked label*/
+.payment-method input:checked + label {
+  padding: 1.5rem 2rem;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+}
+
+

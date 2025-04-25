@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminAuthController;
+use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
@@ -63,9 +64,12 @@ Route::prefix("admin")->middleware(['admin'])->group(function () {
 });
 
 Route::get("admin/login",[AdminAuthController::class,"loginPage"])->name("loginPage");
+Route::post("admin/login",[AdminAuthController::class,"login"])->name("login-auth");
+
 Route::get("admin/register",[AdminAuthController::class,"registerPage"])->name("registerPage");
 Route::post("admin/register",[AdminAuthController::class,"register"])->name("registerProccess");
 
+Route::get("admin/dashboard",[AdminDashboardController::class,"index"])->name("admin-dashboard");
 
 
 

@@ -29,7 +29,7 @@ class AdminAuthController extends Controller
 
             // Check if user is admin (you can adjust this logic)
             if (Auth::user()->role === 'admin') {
-                return redirect()->intended('/admin/dashboard')->with('success', 'Login successful');
+                return redirect()->route("admin-dashboard")->with('success', 'Login successful');
             } else {
                 Auth::logout();
                 return back()->withErrors([
@@ -55,14 +55,12 @@ class AdminAuthController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'gender' => 'Male',
-            'date_of_birth' => '08/08/0000',
+            'date_of_birth' => '2004-09-04',
             'role' => 'admin', // Make sure your users table has a 'role' column
             'password' => Hash::make($request->password),
         ]);
 
-        Auth::login($user);
-
-        return redirect('/admin/dashboard')->with('success', 'Registration successful');
+        return redirect()->route("loginPage")->with('success', 'Registration successful');
     }
 
     // Handle Logout

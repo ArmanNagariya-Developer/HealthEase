@@ -8,7 +8,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card shadow-lg p-4">
                 <h3 class="text-center mb-4">Admin Login</h3>
-                <form method="POST" action="">
+                <form method="POST" action="{{route('login-auth')}}">
                     @csrf
                     <div class="form-group">
                         <label for="email">Email Address</label>
